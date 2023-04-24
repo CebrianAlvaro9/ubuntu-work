@@ -1,0 +1,12 @@
+   <div id="principal" class="row justify-content-center align-items-center g-2 ">
+      <div id="div-zoom" class="card bg-light col-8 justify-content-center align-items-center">
+        <h3 id="ubi" class="card-header bg-light pt-0 text-secondary text-center">{cam === 'kitchen' ? 'Kitchen' : 'Office'} </h3>
+
+      
+        </div>
+        <div id="div-zoom" class="col-12 justify-content-center align-items-center">
+        <iframe width="100%" class="scale zoom" id={`${cam}`} src={cameraUrl}></iframe>
+        <button id="next"onClick={() => handleCameraClick("home")} type="button" class="btn btn-secondary btn-lg">Home</button>
+        <button id="return"onClick={() => handleCameraClick(next)} type="button" class="btn btn-secondary btn-lg">Next</button>
+        </div>
+      

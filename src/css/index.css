@@ -1,0 +1,162 @@
+
+
+
+#root{
+  background-color: #131414;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+
+width: 100vw;
+height: 100vh;
+
+overflow: hidden;
+}
+
+img {
+  display: block;
+}
+.highlighter {
+  background: rgba(0, 255, 0, 0.25);
+  border: 1px dashed #fff;
+  z-index: 1;
+  position: absolute;
+}
+.camView  {
+  position: absolute;
+  padding: 5px;
+  background-color: rgba(255, 111, 0, 0.85);
+  color: #FFF;
+  border: 1px dashed rgba(255, 255, 255, 0.7);
+  z-index: 2;
+  font-size: 12px;
+}
+
+.double-view{
+  background-color: #131414;
+}
+.ocultos{
+display: none;
+}
+.visibles{
+display:contents
+}
+#return{
+  position: relative;
+  top:-38px;
+  left: 28px;
+
+}
+
+#return-settings {
+  position: relative;
+  top: -399px;
+  left: 71%;
+}
+
+#principal{
+  cursor:pointer;
+ 
+  
+ 
+ 
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* this is going to be the small display v700 */
+.normal{
+  height: 300px;
+  width: 100%;
+  margin: 0;
+  padding: 3%;
+
+}
+
+.zoom{
+  margin-top: 0;
+  margin-left: 0%;
+  /* width: 100%; */
+  height: 384px;
+  padding-left: 0%;
+
+}
+.none{
+display: none;
+}
+.visible{
+display: contents;
+}
+#next {
+  position: absolute;
+  top: 420px;
+  left: 700px;
+}
+.next1 {
+  position: absolute;
+  top: 420px;
+  left: 700px;
+}
+
+
+
+
+/*MEDIA FOR CCV12000*/
+/*iframe 640-480px*/
+ @media only screen and (min-width: 850px) {
+
+  
+  
+ 
+  #principal{
+    overflow: hidden;
+  }
+  .normal{
+    height: 500px;
+    width: 100%;
+    margin: 0;
+    padding: 7%;
+  
+  }
+  
+  
+
+   .zoom{
+    cursor: pointer;
+    margin-top: 0;
+    margin-left: 0;
+    height: 720px;
+    padding: 3%;
+    padding-bottom: 10%;
+    } 
+
+    #next{
+      position: absolute;
+      top: 669px;
+      left: 1150px;
+      z-index: 2;
+    }
+
+    #return{
+      position: absolute;
+      top: 669px;
+      left: 33px;
+    }
+    
+    
+    #ubi{
+      padding-top: 3%;
+      font-size: 3em;
+      margin-top: 5%;
+    }
+
+    .hhome{
+      margin-top: 4%;
+    }
+
+}   
